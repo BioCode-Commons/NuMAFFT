@@ -1,0 +1,145 @@
+cp mafftash_premafft.tmpl mafftash_premafft.pl
+cp seekquencer_premafft.tmpl seekquencer_premafft.pl
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c mtxutl.c
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c io.c
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c mltaln9.c
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c tddis.c
+io.c: In function 'input_new':
+io.c:1108:30: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+ 1108 |                 mojiretsu[i] = getc( fp );
+      |                 ~~~~~~~~~~~~~^~~~~~~~~~~~
+io.c:1100:14: note: at offset 10 into destination object 'mojiretsu' of size 10
+ 1100 |         char mojiretsu[10];
+      |              ^~~~~~~~~
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c constants.c
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c nj.c
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c partSalignmm.c  
+mltaln9.c: In function 'fixed_musclesupg_double_realloc_nobk_halfmtx_treeout_memsave':
+mltaln9.c:6494:28: warning: argument 2 range [18446744071562067968, 18446744073709551615] exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+ 6494 |                 int *mem = calloc( sizeof( int ), nseq );
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX26.sdk/usr/include/_stdlib.h:144,
+                 from /Library/Developer/CommandLineTools/SDKs/MacOSX26.sdk/usr/include/stdlib.h:58,
+                 from mltaln.h:13,
+                 from mltaln9.c:1:
+/Library/Developer/CommandLineTools/SDKs/MacOSX26.sdk/usr/include/malloc/_malloc.h:55:45: note: in a call to allocation function 'calloc' declared here
+   55 | void * __sized_by_or_null(__count * __size) calloc(size_t __count, size_t __size) __result_use_check __alloc_size(1,2) _MALLOC_TYPED(malloc_type_calloc, 2);
+      |                                             ^~~~~~
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c Lalignmm.c 
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c rna.c 
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c Salignmm.c 
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c Dalignmm.c 
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c Falign.c
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c Falign_localhom.c
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c Galign11.c 
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c Lalign11.c 
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c genalign11.c 
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c MSalignmm.c 
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c fftFunctions.c
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c fft.c 
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c tditeration.c
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c dvtditr.c
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c defs.c
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c SAalignmm.c -o SAalignmm.o
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c treeOperation.c
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c addfunctions.c
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c dndfast7.c
+/opt/homebrew/bin/gcc-16 -O3 -ffp-contract=off -std=c99   -c -o dndblast.o dndblast.c
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c sextet5.c
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c mafft-distance.c
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c MSalign11.c 
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c suboptalign11.c 
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c pairlocalalignmain.c
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c pairlocalalign.c
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c multi2hat3s.c
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c pairash.c
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c addsingle.c
+/opt/homebrew/bin/gcc-16 -o maffttext2hex maffttext2hex.c  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99  -lm  -lpthread
+/opt/homebrew/bin/gcc-16 -o hex2maffttext hex2maffttext.c  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99  -lm  -lpthread
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c splittbfast.c
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c disttbfast.c
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c tbfast.c
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c nodepair.c
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c mafft-profile.c
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c f2cl.c
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c mccaskillwrap.c
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c contrafoldwrap.c
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c countlen.c
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c seq2regtable.c
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c regtable2seq.c
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c score.c
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c getlag.c
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c dndpre.c
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c setcore.c
+/opt/homebrew/bin/gcc-16 -O3 -ffp-contract=off -std=c99   -c -o filter.o filter.c
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c replaceu.c
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c restoreu.c
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c setdirection.c
+/opt/homebrew/bin/gcc-16  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99 -c makedirectionlist.c
+/opt/homebrew/bin/gcc-16 -o version version.c  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99  -lm  -lpthread 
+sed "s:_LIBDIR:/private/tmp/mafft-upstream-bin/libexec/mafft:" mafft.tmpl  > mafft
+sed "s:_BINDIR:/private/tmp/mafft-upstream-bin/bin:" mafft-homologs.tmpl  > mafft-homologs.rb
+sed "s:_BINDIR:/private/tmp/mafft-upstream-bin/bin:" mafft-sparsecore.tmpl  > mafft-sparsecore.rb
+/opt/homebrew/bin/gcc-16 -o dvtditr mtxutl.o io.o mltaln9.o tddis.o constants.o nj.o partSalignmm.o Lalignmm.o rna.o Salignmm.o Dalignmm.o Falign.o Falign_localhom.o Galign11.o Lalign11.o genalign11.o MSalignmm.o fftFunctions.o fft.o tditeration.o dvtditr.o defs.o SAalignmm.o treeOperation.o addfunctions.o   -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99  -lm  -lpthread
+/opt/homebrew/bin/gcc-16 -o dndfast7 dndfast7.o io.o constants.o mtxutl.o mltaln9.o tddis.o defs.o Galign11.o Lalign11.o genalign11.o  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99  -lm  -lpthread
+/opt/homebrew/bin/gcc-16 -o dndblast dndblast.o io.o constants.o mtxutl.o mltaln9.o tddis.o defs.o Galign11.o Lalign11.o genalign11.o  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99  -lm  -lpthread
+/opt/homebrew/bin/gcc-16 -o sextet5 io.o constants.o mtxutl.o mltaln9.o tddis.o sextet5.o defs.o Galign11.o Lalign11.o genalign11.o  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99  -lm  -lpthread
+/opt/homebrew/bin/gcc-16 -o mafft-distance io.o constants.o mtxutl.o mltaln9.o tddis.o mafft-distance.o defs.o Galign11.o Lalign11.o genalign11.o  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99  -lm  -lpthread
+/opt/homebrew/bin/gcc-16 -o pairlocalalign mtxutl.o io.o mltaln9.o tddis.o constants.o partSalignmm.o Lalignmm.o rna.o Salignmm.o Dalignmm.o Falign.o MSalignmm.o Galign11.o Lalign11.o genalign11.o MSalign11.o suboptalign11.o SAalignmm.o pairlocalalignmain.o pairlocalalign.o defs.o fft.o fftFunctions.o  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99  -lm  -lpthread
+/opt/homebrew/bin/gcc-16 -o multi2hat3s mtxutl.o io.o mltaln9.o tddis.o constants.o multi2hat3s.o defs.o fft.o fftFunctions.o Galign11.o Lalign11.o genalign11.o  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99  -lm  -lpthread
+/opt/homebrew/bin/gcc-16 -o pairash mtxutl.o io.o mltaln9.o tddis.o constants.o partSalignmm.o Lalignmm.o rna.o Salignmm.o Dalignmm.o Falign.o MSalignmm.o Galign11.o Lalign11.o genalign11.o MSalign11.o suboptalign11.o SAalignmm.o pairash.o defs.o fft.o fftFunctions.o  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99  -lm  -lpthread
+/opt/homebrew/bin/gcc-16 -o addsingle mtxutl.o io.o mltaln9.o tddis.o constants.o MSalignmm.o partSalignmm.o Lalignmm.o rna.o Salignmm.o Dalignmm.o Falign.o Falign_localhom.o Galign11.o Lalign11.o genalign11.o SAalignmm.o addsingle.o defs.o fft.o fftFunctions.o addfunctions.o  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99  -lm  -lpthread
+/opt/homebrew/bin/gcc-16 -o splittbfast mtxutl.o io.o mltaln9.o tddis.o constants.o partSalignmm.o Lalignmm.o rna.o Salignmm.o  Dalignmm.o Falign.o Falign_localhom.o Galign11.o Lalign11.o genalign11.o SAalignmm.o MSalignmm.o splittbfast.o defs.o fft.o fftFunctions.o   -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99  -lm  -lpthread
+/opt/homebrew/bin/gcc-16 -o disttbfast mtxutl.o io.o mltaln9.o tddis.o constants.o partSalignmm.o Lalignmm.o rna.o Salignmm.o Dalignmm.o Falign.o Falign_localhom.o Galign11.o Lalign11.o genalign11.o SAalignmm.o MSalignmm.o disttbfast.o defs.o fft.o fftFunctions.o addfunctions.o  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99  -lm  -lpthread
+/opt/homebrew/bin/gcc-16 -o tbfast mtxutl.o io.o mltaln9.o tddis.o constants.o MSalignmm.o partSalignmm.o Lalignmm.o rna.o Salignmm.o Dalignmm.o Falign.o Falign_localhom.o Galign11.o Lalign11.o genalign11.o SAalignmm.o tbfast.o defs.o fft.o fftFunctions.o addfunctions.o pairlocalalign.o MSalign11.o   -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99  -lm  -lpthread
+/opt/homebrew/bin/gcc-16 -o nodepair mtxutl.o io.o mltaln9.o tddis.o constants.o MSalignmm.o partSalignmm.o Lalignmm.o rna.o Salignmm.o Dalignmm.o Falign.o Falign_localhom.o Galign11.o Lalign11.o genalign11.o SAalignmm.o nodepair.o defs.o fft.o fftFunctions.o addfunctions.o pairlocalalign.o MSalign11.o  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99  -lm  -lpthread
+/opt/homebrew/bin/gcc-16 -o mafft-profile io.o mtxutl.o mltaln9.o tddis.o constants.o partSalignmm.o MSalignmm.o Lalignmm.o rna.o Salignmm.o Dalignmm.o SAalignmm.o Galign11.o Lalign11.o genalign11.o Falign.o Falign_localhom.o fftFunctions.o fft.o mafft-profile.o defs.o  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99  -lm  -lpthread
+/opt/homebrew/bin/gcc-16 -o f2cl mtxutl.o io.o f2cl.o constants.o defs.o  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99  -lm  -lpthread
+/opt/homebrew/bin/gcc-16 -o mccaskillwrap mtxutl.o io.o mccaskillwrap.o constants.o defs.o mltaln9.o Galign11.o Lalign11.o genalign11.o  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99  -lm  -lpthread
+/opt/homebrew/bin/gcc-16 -o contrafoldwrap mtxutl.o io.o contrafoldwrap.o constants.o defs.o mltaln9.o Galign11.o Lalign11.o genalign11.o  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99  -lm  -lpthread
+/opt/homebrew/bin/gcc-16 -o countlen mtxutl.o io.o countlen.o defs.o  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99  -lm  -lpthread
+/opt/homebrew/bin/gcc-16 -o seq2regtable mtxutl.o io.o seq2regtable.o defs.o  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99  -lm  -lpthread
+/opt/homebrew/bin/gcc-16 -o regtable2seq mtxutl.o io.o regtable2seq.o defs.o mltaln9.o Galign11.o Lalign11.o genalign11.o  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99  -lm  -lpthread
+/opt/homebrew/bin/gcc-16 -o score io.o mtxutl.o mltaln9.o score.o constants.o defs.o Galign11.o Lalign11.o genalign11.o  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99  -lm  -lpthread
+/opt/homebrew/bin/gcc-16 -o getlag mtxutl.o io.o mltaln9.o tddis.o constants.o partSalignmm.o Lalignmm.o rna.o Salignmm.o Falign.o Falign_localhom.o Galign11.o Lalign11.o genalign11.o SAalignmm.o MSalignmm.o Dalignmm.o getlag.o defs.o fft.o fftFunctions.o  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99  -lm  -lpthread
+/opt/homebrew/bin/gcc-16 -o dndpre dndpre.o io.o constants.o mtxutl.o mltaln9.o defs.o Galign11.o Lalign11.o genalign11.o  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99  -lm  -lpthread
+/opt/homebrew/bin/gcc-16 -o setcore mtxutl.o io.o mltaln9.o tddis.o constants.o partSalignmm.o Lalignmm.o rna.o Salignmm.o Dalignmm.o Falign.o Falign_localhom.o Galign11.o Lalign11.o genalign11.o SAalignmm.o MSalignmm.o setcore.o defs.o fft.o fftFunctions.o  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99  -lm  -lpthread
+/opt/homebrew/bin/gcc-16 -o filter mtxutl.o io.o filter.o defs.o mltaln9.o Galign11.o Lalign11.o genalign11.o  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99  -lm  -lpthread
+/opt/homebrew/bin/gcc-16 -o replaceu mtxutl.o io.o replaceu.o defs.o mltaln9.o Galign11.o Lalign11.o genalign11.o  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99  -lm  -lpthread
+/opt/homebrew/bin/gcc-16 -o restoreu mtxutl.o io.o restoreu.o defs.o mltaln9.o Galign11.o Lalign11.o genalign11.o  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99  -lm  -lpthread
+/opt/homebrew/bin/gcc-16 -o setdirection mtxutl.o io.o setdirection.o defs.o mltaln9.o Galign11.o Lalign11.o genalign11.o  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99  -lm  -lpthread
+/opt/homebrew/bin/gcc-16 -o makedirectionlist mtxutl.o io.o mltaln9.o tddis.o constants.o partSalignmm.o Lalignmm.o rna.o Salignmm.o  Dalignmm.o Falign.o Falign_localhom.o Galign11.o Lalign11.o genalign11.o SAalignmm.o MSalignmm.o makedirectionlist.o defs.o fft.o fftFunctions.o addfunctions.o  -Denablemultithread  -std=c99 -O3 -ffp-contract=off -std=c99  -lm  -lpthread
+cp mafft mafft-homologs.rb mafft-sparsecore.rb ../scripts
+chmod 755 ../scripts/*
+cp mafftash_premafft.pl seekquencer_premafft.pl dvtditr dndfast7 dndblast sextet5 mafft-distance pairlocalalign multi2hat3s pairash addsingle maffttext2hex hex2maffttext splittbfast disttbfast tbfast nodepair mafft-profile f2cl mccaskillwrap contrafoldwrap countlen seq2regtable regtable2seq score getlag dndpre setcore filter replaceu restoreu setdirection makedirectionlist version  ../binaries
+chmod 755 ../binaries/*
+done.
+cp mafft mafft-homologs.rb mafft-sparsecore.rb ../scripts
+chmod 755 ../scripts/*
+cp mafftash_premafft.pl seekquencer_premafft.pl dvtditr dndfast7 dndblast sextet5 mafft-distance pairlocalalign multi2hat3s pairash addsingle maffttext2hex hex2maffttext splittbfast disttbfast tbfast nodepair mafft-profile f2cl mccaskillwrap contrafoldwrap countlen seq2regtable regtable2seq score getlag dndpre setcore filter replaceu restoreu setdirection makedirectionlist version  ../binaries
+chmod 755 ../binaries/*
+done.
+mkdir -p /private/tmp/mafft-upstream-bin/libexec/mafft
+chmod 755 /private/tmp/mafft-upstream-bin/libexec/mafft
+mkdir -p /private/tmp/mafft-upstream-bin/bin
+chmod 755 /private/tmp/mafft-upstream-bin/bin
+chmod 755 mafft mafft-homologs.rb mafft-sparsecore.rb
+install mafft mafft-homologs.rb mafft-sparsecore.rb  /private/tmp/mafft-upstream-bin/bin
+chmod 755 dvtditr dndfast7 dndblast sextet5 mafft-distance pairlocalalign multi2hat3s pairash addsingle maffttext2hex hex2maffttext splittbfast disttbfast tbfast nodepair mafft-profile f2cl mccaskillwrap contrafoldwrap countlen seq2regtable regtable2seq score getlag dndpre setcore filter replaceu restoreu setdirection makedirectionlist version  ||:     # in MinGW, it's ok if this fails
+strip dvtditr dndfast7 dndblast sextet5 mafft-distance pairlocalalign multi2hat3s pairash addsingle maffttext2hex hex2maffttext splittbfast disttbfast tbfast nodepair mafft-profile f2cl mccaskillwrap contrafoldwrap countlen seq2regtable regtable2seq score getlag dndpre setcore filter replaceu restoreu setdirection makedirectionlist version  ||: # may fail for dash_client on mac.
+install dvtditr dndfast7 dndblast sextet5 mafft-distance pairlocalalign multi2hat3s pairash addsingle maffttext2hex hex2maffttext splittbfast disttbfast tbfast nodepair mafft-profile f2cl mccaskillwrap contrafoldwrap countlen seq2regtable regtable2seq score getlag dndpre setcore filter replaceu restoreu setdirection makedirectionlist version  /private/tmp/mafft-upstream-bin/libexec/mafft
+install mafftash_premafft.pl seekquencer_premafft.pl /private/tmp/mafft-upstream-bin/libexec/mafft
+( cd /private/tmp/mafft-upstream-bin/bin; \
+rm -f linsi ginsi einsi fftns fftnsi nwns nwnsi xinsi qinsi; \
+rm -f mafft-linsi mafft-ginsi mafft-einsi mafft-fftns mafft-fftnsi mafft-nwns mafft-nwnsi mafft-xinsi mafft-qinsi mafft-randomcore.rb ; \
+ln -s mafft linsi; ln -s mafft ginsi; ln -s mafft fftns; \
+ln -s mafft fftnsi; ln -s mafft nwns; ln -s mafft nwnsi; \
+ln -s mafft einsi; \
+ln -s mafft mafft-linsi; ln -s mafft mafft-ginsi; ln -s mafft mafft-fftns; \
+ln -s mafft mafft-fftnsi; ln -s mafft mafft-nwns; ln -s mafft mafft-nwnsi; \
+ln -s mafft mafft-einsi; ln -s mafft mafft-xinsi; ln -s mafft mafft-qinsi;\
+rm -f mafft-profile mafft-profile.exe; ln -s /private/tmp/mafft-upstream-bin/libexec/mafft/mafft-profile .; \
+rm -f mafft-distance mafft-distance.exe; ln -s /private/tmp/mafft-upstream-bin/libexec/mafft/mafft-distance . )
+mkdir -p /private/tmp/mafft-upstream-bin/share/man/man1
+chmod 755 /private/tmp/mafft-upstream-bin/share/man/man1
+install -m 644 mafft.1 mafft-homologs.1 /private/tmp/mafft-upstream-bin/share/man/man1

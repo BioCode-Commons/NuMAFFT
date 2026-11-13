@@ -1,0 +1,167 @@
+rnasim579.t4.r0.baseline: 10.102s rc=0
+rnasim579.t4.r0.optimized: 2.372s rc=0
+rnasim579.t4.r1.baseline: 10.737s rc=0
+rnasim579.t4.r1.optimized: 2.382s rc=0
+rnasim579.t4.r2.optimized: 2.382s rc=0
+rnasim579.t4.r2.baseline: 10.100s rc=0
+rnasim579.t4.r3.baseline: 10.093s rc=0
+rnasim579.t4.r3.optimized: 2.373s rc=0
+rnasim2k.t4.r0.baseline: 43.309s rc=0
+rnasim2k.t4.r0.optimized: 8.547s rc=0
+rnasim2k.t4.r1.baseline: 43.292s rc=0
+rnasim2k.t4.r1.optimized: 8.531s rc=0
+rnasim2k.t4.r2.optimized: 8.562s rc=0
+rnasim2k.t4.r2.baseline: 43.322s rc=0
+rnasim2k.t4.r3.baseline: 43.099s rc=0
+rnasim2k.t4.r3.optimized: 8.591s rc=0
+prot2k.t4.r0.baseline: 4.477s rc=0
+prot2k.t4.r0.optimized: 1.485s rc=0
+prot2k.t4.r1.baseline: 4.478s rc=0
+prot2k.t4.r1.optimized: 1.482s rc=0
+prot2k.t4.r2.optimized: 1.474s rc=0
+prot2k.t4.r2.baseline: 4.603s rc=0
+prot2k.t4.r3.baseline: 4.475s rc=0
+prot2k.t4.r3.optimized: 1.468s rc=0
+homfam_sdr_sub3k.t4.r0.baseline: 4.858s rc=0
+homfam_sdr_sub3k.t4.r0.optimized: 1.196s rc=0
+homfam_sdr_sub3k.t4.r1.baseline: 4.659s rc=0
+homfam_sdr_sub3k.t4.r1.optimized: 1.188s rc=0
+homfam_sdr_sub3k.t4.r2.optimized: 1.203s rc=0
+homfam_sdr_sub3k.t4.r2.baseline: 4.826s rc=0
+homfam_sdr_sub3k.t4.r3.baseline: 4.651s rc=0
+homfam_sdr_sub3k.t4.r3.optimized: 1.213s rc=0
+16S.T.t4.r0.baseline: 200.531s rc=0
+16S.T.t4.r0.optimized: 18.140s rc=0
+16S.T.t4.r1.baseline: 196.594s rc=0
+16S.T.t4.r1.optimized: 18.344s rc=0
+16S.T.t4.r2.optimized: 18.092s rc=0
+16S.T.t4.r2.baseline: 208.189s rc=0
+16S.T.t4.r3.baseline: 197.324s rc=0
+16S.T.t4.r3.optimized: 17.803s rc=0
+[
+  {
+    "dataset": "rnasim579",
+    "threads": 4,
+    "repetitions": 3,
+    "valid_runs": true,
+    "baseline_median_seconds": 10.10012137517333,
+    "optimized_median_seconds": 2.381500832736492,
+    "speedup_ratio_of_medians": 4.2410740472291435,
+    "paired_speedups": [
+      4.5084174347892425,
+      4.240057504738059,
+      4.252781437409209
+    ],
+    "identical_pairs": 3,
+    "baseline_wall_range": [
+      10.09284337516874,
+      10.7367998752743
+    ],
+    "optimized_wall_range": [
+      2.3732334999367595,
+      2.382071791216731
+    ],
+    "baseline_max_child_rss_bytes": 568688640,
+    "optimized_max_child_rss_bytes": 443793408
+  },
+  {
+    "dataset": "rnasim2k",
+    "threads": 4,
+    "repetitions": 3,
+    "valid_runs": true,
+    "baseline_median_seconds": 43.2921722503379,
+    "optimized_median_seconds": 8.561608833260834,
+    "speedup_ratio_of_medians": 5.056546391392345,
+    "paired_speedups": [
+      5.074508836985944,
+      5.060030384226236,
+      5.016868812537704
+    ],
+    "identical_pairs": 3,
+    "baseline_wall_range": [
+      43.098826915957034,
+      43.32200083415955
+    ],
+    "optimized_wall_range": [
+      8.53130295779556,
+      8.59078212454915
+    ],
+    "baseline_max_child_rss_bytes": 1229488128,
+    "optimized_max_child_rss_bytes": 692273152
+  },
+  {
+    "dataset": "prot2k",
+    "threads": 4,
+    "repetitions": 3,
+    "valid_runs": true,
+    "baseline_median_seconds": 4.477912541478872,
+    "optimized_median_seconds": 1.4736911244690418,
+    "speedup_ratio_of_medians": 3.0385692545255885,
+    "paired_speedups": [
+      3.0207289032704328,
+      3.1233048420933414,
+      3.0479547222899495
+    ],
+    "identical_pairs": 3,
+    "baseline_wall_range": [
+      4.475078750401735,
+      4.602786624804139
+    ],
+    "optimized_wall_range": [
+      1.4682235000655055,
+      1.4823947083204985
+    ],
+    "baseline_max_child_rss_bytes": 312983552,
+    "optimized_max_child_rss_bytes": 207667200
+  },
+  {
+    "dataset": "homfam_sdr_sub3k",
+    "threads": 4,
+    "repetitions": 3,
+    "valid_runs": true,
+    "baseline_median_seconds": 4.6592630837112665,
+    "optimized_median_seconds": 1.2033977918326855,
+    "speedup_ratio_of_medians": 3.8717563845746756,
+    "paired_speedups": [
+      3.922212511966263,
+      4.010544586805684,
+      3.833528829662702
+    ],
+    "identical_pairs": 3,
+    "baseline_wall_range": [
+      4.65078941732645,
+      4.82628049980849
+    ],
+    "optimized_wall_range": [
+      1.1879170415923,
+      1.2131875418126583
+    ],
+    "baseline_max_child_rss_bytes": 326500352,
+    "optimized_max_child_rss_bytes": 103858176
+  },
+  {
+    "dataset": "16S.T",
+    "threads": 4,
+    "repetitions": 3,
+    "valid_runs": true,
+    "baseline_median_seconds": 197.32430591620505,
+    "optimized_median_seconds": 18.091787290759385,
+    "speedup_ratio_of_medians": 10.906844235173548,
+    "paired_speedups": [
+      10.71705400825546,
+      11.507350954584187,
+      11.083689888273934
+    ],
+    "identical_pairs": 3,
+    "baseline_wall_range": [
+      196.59398033376783,
+      208.18854575045407
+    ],
+    "optimized_wall_range": [
+      17.80312404129654,
+      18.344031875021756
+    ],
+    "baseline_max_child_rss_bytes": 4898717696,
+    "optimized_max_child_rss_bytes": 2678505472
+  }
+]

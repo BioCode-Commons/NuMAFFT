@@ -1,3 +1,6 @@
+NuMAFFT incorporates the following BSD-licensed MAFFT and fast-mafft work.
+The original notice is retained below.
+
 fast-mafft is a modified version of MAFFT v7.526 (https://mafft.cbrc.jp/alignment/software/).
 
 - The code in fast-mafft-src/core, MAFFT's and the changes to it, is distributed under the BSD

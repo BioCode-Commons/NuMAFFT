@@ -1,0 +1,52 @@
+[
+  {
+    "dataset": "rnasim579",
+    "threads": 1,
+    "repetitions": 3,
+    "valid_runs": true,
+    "baseline_median_seconds": 29.329241083934903,
+    "optimized_median_seconds": 8.677692499943078,
+    "speedup_ratio_of_medians": 3.37984332633673,
+    "paired_speedups": [
+      3.454474553468033,
+      3.3856940245215608,
+      3.37984332633673
+    ],
+    "identical_pairs": 3,
+    "baseline_wall_range": [
+      29.24827358406037,
+      29.98835333250463
+    ],
+    "optimized_wall_range": [
+      8.638782291673124,
+      8.681017291732132
+    ],
+    "baseline_max_child_rss_bytes": 187727872,
+    "optimized_max_child_rss_bytes": 124911616
+  },
+  {
+    "dataset": "prot2k",
+    "threads": 1,
+    "repetitions": 3,
+    "valid_runs": true,
+    "baseline_median_seconds": 13.534420958720148,
+    "optimized_median_seconds": 4.7338525000959635,
+    "speedup_ratio_of_medians": 2.8590711177515105,
+    "paired_speedups": [
+      2.8547282294555836,
+      2.8625195969322634,
+      2.8590711177515105
+    ],
+    "identical_pairs": 3,
+    "baseline_wall_range": [
+      13.514887124300003,
+      13.548707416281104
+    ],
+    "optimized_wall_range": [
+      4.721325624734163,
+      4.7460585832595825
+    ],
+    "baseline_max_child_rss_bytes": 173309952,
+    "optimized_max_child_rss_bytes": 104726528
+  }
+]

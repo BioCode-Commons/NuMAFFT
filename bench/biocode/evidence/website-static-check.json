@@ -1,0 +1,20 @@
+{
+  "checked_at_utc": "2026-11-11T19:00:01.782246+00:00",
+  "local_files_and_anchors": "pass",
+  "external_links": [
+    "https://github.com/BioCode-Commons/NuSTAR",
+    "https://github.com/BioCode-Commons/fast-mafft",
+    "https://github.com/BioCode-Commons/fast-mafft/blob/main/CHANGES.md",
+    "https://github.com/BioCode-Commons/fast-mafft/blob/main/RESULTS.md",
+    "https://github.com/BioCode-Commons/fast-mafft/blob/main/bench/biocode/README.md",
+    "https://github.com/BioCode-Commons/fast-mafft/blob/main/bench/biocode/REPORT.md",
+    "https://github.com/BioCode-Commons/fast-mafft/blob/main/bench/biocode/evidence/carc-regenerated.md",
+    "https://github.com/BioCode-Commons/fast-mafft/blob/main/bench/biocode/measurements.csv",
+    "https://github.com/BioCode-Commons/fast-mafft/tree/main/bench/biocode",
+    "https://github.com/BioCode-Commons/fast-mafft/tree/main/bench/biocode/results",
+    "https://github.com/yih0nk/fast-mafft",
+    "https://gitlab.com/sysimm/mafft"
+  ],
+  "external_publication_targets": "Future BioCode-Commons/fast-mafft links become available only after publication; not claimed live.",
+  "visual_browser_check": "unavailable: local browser disabled and Mac locked"
+}

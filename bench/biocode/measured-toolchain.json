@@ -1,0 +1,37 @@
+{
+  "baseline_commit": "ee9799916df6a5d5103d46d54933f8eb6d28e244",
+  "optimized_commit": "6474c62da49ca3af73bbb7b05287bbbb4a2036e5",
+  "compiler": "Homebrew GCC 16.1.0",
+  "cflags": "-O3 -ffp-contract=off -std=c99",
+  "repetitions": 3,
+  "environment": {
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "machine": "arm64",
+    "logical_cpus": 10,
+    "python": "3.14.6 (main, Jun 10 2026, 10:03:53) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "load_average_at_start": [
+      5.57421875,
+      6.4755859375,
+      6.927734375
+    ],
+    "exclusive_host": false,
+    "cpu_affinity": "not pinned",
+    "cache_policy": "warm; no OS cache flush",
+    "machdep.cpu.brand_string": "Apple M1 Max",
+    "hw.memsize": "34359738368",
+    "hw.perflevel0.physicalcpu": "8",
+    "hw.perflevel1.physicalcpu": "2"
+  },
+  "suite_started_at_utc": [
+    "2026-11-11T18:35:34.942423+00:00",
+    "2026-11-11T18:55:36.260388+00:00"
+  ],
+  "source_file_sha256": {
+    "build.sh": "622b00600cd9363d1a229e793743147334fd573c78688a04615f311cd1166053",
+    "render.py": "05743e56f7f5878338306a83b7bdc7aef9d5d585076126a1bb9a492ba8dc6a83",
+    "render_site.py": "ebff57001b9f35038409f6ca792b4f26b6d9f0709e21c8dda5f18a6de698face",
+    "run.py": "80422b7c966c7784ea7c41d9011ed77efa8c6e0077841afa3cbee1234f05b3c8",
+    "test_render.py": "cc96e0fe20fd79b665630a816238a692a25d17e1bb8318af1104ea14941b20ce",
+    "test_run.py": "89eef8b1aa46236fa73acbb551a74df42ed1c8271fedff8482ea7782585a74fa"
+  }
+}

@@ -1,0 +1,11 @@
+test_different_build_flags_cannot_be_pooled (test_render.ReportGuards.test_different_build_flags_cannot_be_pooled) ... ok
+test_incomplete_evidence_is_rejected (test_render.ReportGuards.test_incomplete_evidence_is_rejected) ... ok
+test_mismatching_warmup_is_not_hidden_by_matching_measured_runs (test_render.ReportGuards.test_mismatching_warmup_is_not_hidden_by_matching_measured_runs) ... ok
+test_alignment_validation_rejects_lost_or_changed_sequences (test_run.BenchmarkChecks.test_alignment_validation_rejects_lost_or_changed_sequences) ... ok
+test_duplicate_headers_do_not_hide_lost_records (test_run.BenchmarkChecks.test_duplicate_headers_do_not_hide_lost_records) ... ok
+test_worker_records_failure_and_timeout_separately (test_run.BenchmarkChecks.test_worker_records_failure_and_timeout_separately) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.256s
+
+OK
