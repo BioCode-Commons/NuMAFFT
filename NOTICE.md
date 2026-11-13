@@ -10,8 +10,8 @@ distributed as fast-mafft v10.
 | BioCode Commons materials | NuMAFFT documentation, local benchmark packaging and website presentation |
 
 The import and project rename preserve the source history and do not change the
-alignment code. Retain the copyright notices, license conditions and disclaimers
-in [LICENSE](LICENSE) and `fast-mafft-src/license`. Unchanged extension components
+alignment code. The copyright notices, license conditions and disclaimers formerly
+in the root LICENSE file are retained in full below and in `fast-mafft-src/license`. Unchanged extension components
 keep the notices in `fast-mafft-src/license.extensions`.
 
 Local output archives include their own data notices in
@@ -21,3 +21,61 @@ The original repositories remain at:
 
 - https://gitlab.com/sysimm/mafft
 - https://github.com/yih0nk/fast-mafft
+
+## License terms
+
+```text
+NuMAFFT incorporates the following BSD-licensed MAFFT and fast-mafft work.
+The original notice is retained below.
+
+fast-mafft is a modified version of MAFFT v7.526 (https://mafft.cbrc.jp/alignment/software/).
+
+- The code in fast-mafft-src/core, MAFFT's and the changes to it, is distributed under the BSD
+  license below. MAFFT's own notice is kept in fast-mafft-src/license.
+- The code in fast-mafft-src/extensions (from the Vienna RNA package, MXSCARNA and ProbConsRNA) is
+  unchanged and keeps its own licenses: see fast-mafft-src/license.extensions.
+- Everything else in this repository (the evaluation and benchmark scripts, the documentation and
+  fast-mafft-v10.patch) is distributed under the same BSD license.
+- The benchmark inputs are not part of the repository; their sources and licenses are listed in
+  bench/DATA.md.
+
+------------------------------------------------------------------------------------------------
+
+MAFFT: multiple sequence alignment program
+Copyright (c) 2009 Kazutaka Katoh
+
+fast-mafft: changes to MAFFT v7.526, evaluation and documentation
+Copyright (c) 2026 Yihan Hong
+
+Redistribution and use in source and binary forms,
+with or without modification, are permitted provided
+that the following conditions are met:
+
+Redistributions of source code must retain the
+above copyright notice, this list of conditions
+and the following disclaimer.  Redistributions in
+binary form must reproduce the above copyright
+notice, this list of conditions and the following
+disclaimer in the documentation and/or other
+materials provided with the distribution.
+
+The name of the author may not be used to endorse
+or promote products derived from this software without
+specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE AUTHOR "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING,
+BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
+AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA,
+OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED
+AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
+STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
+OF SUCH DAMAGE.
+```

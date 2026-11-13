@@ -160,6 +160,6 @@ that algorithm implementation.
 - [Upstream v7.526 source](https://gitlab.com/sysimm/mafft/-/tree/ee9799916df6a5d5103d46d54933f8eb6d28e244)
 - [Data sources and licenses](bench/DATA.md)
 
-The project retains the [BSD license](LICENSE). Original copyright and third-party
+The project's [BSD terms are in NOTICE.md](NOTICE.md#license-terms). Original copyright and third-party
 notices remain in [NOTICE.md](NOTICE.md), `fast-mafft-src/license` and
 `fast-mafft-src/license.extensions`.
