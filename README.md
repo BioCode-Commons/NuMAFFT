@@ -163,3 +163,9 @@ that algorithm implementation.
 The project's [BSD terms are in NOTICE.md](NOTICE.md#license-terms). Original copyright and third-party
 notices remain in [NOTICE.md](NOTICE.md), `fast-mafft-src/license` and
 `fast-mafft-src/license.extensions`.
+
+## Publishing benchmark results
+
+Maintainers publish benchmark updates through this repository. Update [`benchmarks/published.json`](benchmarks/published.json) and the supporting benchmark report, pass the **Published benchmark** check, then merge the PR into `main`. The BioCode Commons website updates automatically; no website edit or personal publishing token is needed.
+
+See [contributor guidelines](CONTRIBUTING.md#benchmark-publication) for the review checklist and [the data format](benchmarks/README.md) for field definitions.
